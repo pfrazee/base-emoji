@@ -1,5 +1,12 @@
 var emojis = require('emoji-named-characters')
-var emojiSubset = Object.keys(emojis).slice(0, 256)
+var sorted = Object.keys(emojis).sort(function(a, b) {
+  var aChar = emojis[a].character
+  var bChar = emojis[b].character
+  if (aChar < bChar) return -1
+  if (bChar < aChar) return 1
+  return 0
+})
+var emojiSubset = sorted.slice(0, 256)
 
 function toBuffer(v) {
   if (!Buffer.isBuffer(v))
