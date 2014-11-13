@@ -15,7 +15,7 @@ becomes
 
 ## api
 
-```
+```js
 var baseEmoji = require('base-emoji')
 var buf = new Buffer('deadbeef', 'hex')
 baseEmoji.toUtf8(buf)
