@@ -21,8 +21,8 @@ baseEmoji.toUtf8(buf)
 // => '🎯🕗😕🐬'
 baseEmoji.toNames(buf)
 // => ':dart::clock8::confused::dolphin:'
-baseEmoji.toCustom(buf, function(v, emojiName, emojiData) {
-  return '<img src="/img/emoji/'+emojiName+'.png" alt="'+emojiData.character+'" title="'+emojiName+'">'
+baseEmoji.toCustom(buf, function(v, emoji) {
+  return '<img src="/img/emoji/'+emoji.name+'.png" alt="'+emoji.char+'" title="'+emoji.name+'">'
 })
 // => '<img src="/img/emoji/dart.png" alt="🎯" title="dart">...'
 ```
