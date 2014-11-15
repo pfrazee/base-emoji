@@ -29,4 +29,4 @@ baseEmoji.toCustom(buf, function(v, emoji) {
 
 ## encoding
 
-The emojis used are in `emojis.json`. There are 854 emojis there, so the converter reads sequences of 9 bits at a time and maps the value to the first 512 of them. To stay consistent with other renderings, make sure you don't change the order of your emojis.json.
+The emojis used are in `emojis.json`. There are 854 emojis there, but the converter reads sequences of 8 bits at a time, and so only maps the value to the first 256 of them. To stay consistent with other renderings, make sure you don't change the order of your emojis.json.
