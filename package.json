@@ -1,7 +1,7 @@
 {
   "name": "base-emoji",
   "description": "Output a buffer in emojis",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/pfraze/base-emoji",
   "repository": {
     "type": "git",
