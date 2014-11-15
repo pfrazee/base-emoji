@@ -1,14 +1,14 @@
 {
   "name": "base-emoji",
   "description": "Output a buffer in emojis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/pfraze/base-emoji",
   "repository": {
     "type": "git",
     "url": "git://github.com/pfraze/base-emoji.git"
   },
   "dependencies": {
-    "emoji-named-characters": "^1.0.1"
+    "bitparser": "~0.1.1"
   },
   "author": "Paul Frazee <pfrazee@gmail.com>",
   "license": "MIT"
