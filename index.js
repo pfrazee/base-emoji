@@ -15,8 +15,8 @@ function convert(buf, fn) {
   return out
 }
 
-
-exports.toUtf8 = function(buf) {
+exports.toUnicode =
+exports.toUtf8 = function(buf) { // toUtf8 is legacy, it's inaccurate - JS is utf16
   return convert(buf, function(c) {
     return emojis[c].char
   })
@@ -32,4 +32,40 @@ exports.toCustom = function(buf, fn) {
   return convert(buf, function(c) {
     return fn(c, emojis[c])
   })
+}
+
+exports.fromUnicode = function (s) {
+  s = getSymbols(s)
+  var buf = new Buffer(s.length)
+  s.forEach(function (symbol, index) {
+    for (var i=0; i < emojis.length; i++) {
+      if (emojis[i].char == symbol) {
+        buf.writeUIntBE(i, index, 1)
+        break
+      }
+    }
+  })
+  return buf
+}
+
+// https://mathiasbynens.be/notes/javascript-unicode
+// ^ doing the lord's work
+function getSymbols(string) {
+  var length = string.length;
+  var index = -1;
+  var output = [];
+  var character;
+  var charCode;
+  while (++index < length) {
+    character = string.charAt(index);
+    charCode = character.charCodeAt(0);
+    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+      // Note: this doesn’t account for lone high surrogates;
+      // you’d need even more code for that!
+      output.push(character + string.charAt(++index));
+    } else {
+      output.push(character);
+    }
+  }
+  return output;
 }

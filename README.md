@@ -17,7 +17,7 @@ becomes
 ```js
 var baseEmoji = require('base-emoji')
 var buf = new Buffer('deadbeef', 'hex')
-baseEmoji.toUtf8(buf)
+baseEmoji.toUnicode(buf)
 // => '🎯🕗😕🐬'
 baseEmoji.toNames(buf)
 // => ':dart::clock8::confused::dolphin:'
@@ -25,6 +25,8 @@ baseEmoji.toCustom(buf, function(v, emoji) {
   return '<img src="/img/emoji/'+emoji.name+'.png" alt="'+emoji.char+'" title="'+emoji.name+'">'
 })
 // => '<img src="/img/emoji/dart.png" alt="🎯" title="dart">...'
+baseEmoji.fromUnicode(baseEmoji.toUnicode(buf))
+// => <Buffer de ad be ef>
 ```
 
 ## encoding
