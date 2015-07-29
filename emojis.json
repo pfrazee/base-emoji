@@ -317,7 +317,7 @@
   },
   {
     "char": "⬛️",
-    "name": "black_square"
+    "name": "black_medium_square"
   },
   {
     "char": "🔲",
@@ -929,7 +929,7 @@
   },
   {
     "char": "🍩",
-    "name": "donut"
+    "name": "doughnut"
   },
   {
     "char": "🚪",

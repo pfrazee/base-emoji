@@ -10,7 +10,7 @@ You have base 16, base 64, and now, base emoji.
 
 becomes
 
-:busstop::crystal_ball::bamboo::bookmark::city_sunset::donut::arrow_lower_left::cake::copyright::dog::card_index::baseball::bear::arrow_up_down::baggage_claim::bookmark::arrow_right::euro::eight_pointed_black_star::cow::cinema::beer::100::cow2::clock230::black_square::cookie::blue_heart::abcd::camera::dolls::envelope:
+:busstop::crystal_ball::bamboo::bookmark::city_sunset::doughnut::arrow_lower_left::cake::copyright::dog::card_index::baseball::bear::arrow_up_down::baggage_claim::bookmark::arrow_right::euro::eight_pointed_black_star::cow::cinema::beer::100::cow2::clock230::black_medium_square::cookie::blue_heart::abcd::camera::dolls::envelope:
 
 ## api
 
