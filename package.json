@@ -1,7 +1,7 @@
 {
   "name": "base-emoji",
   "description": "Output a buffer in emojis",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "homepage": "https://github.com/pfraze/base-emoji",
   "repository": {
     "type": "git",
@@ -11,5 +11,6 @@
     "bitparser": "~0.1.1"
   },
   "author": "Paul Frazee <pfrazee@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {}
 }
