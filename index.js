@@ -9,8 +9,10 @@ function toBuffer(v) {
 function convert(buf, fn) {
   buf = toBuffer(buf)
   var out = ''
+  var n =0;
   for (var i = 0; i < buf.length; i++) {
     out += fn(buf.readUInt8(i))
+    n++
   }
   return out
 }
@@ -44,6 +46,8 @@ exports.fromUnicode = function (s) {
         break
       }
     }
+    if (i == emojis.length)
+      throw new Error('Failed to match symbol: ' + symbol + ' (' + symbol.charCodeAt(0) + ' ' + symbol.charCodeAt(1) + ')')
   })
   return buf
 }
@@ -59,11 +63,11 @@ function getSymbols(string) {
   while (++index < length) {
     character = string.charAt(index);
     charCode = character.charCodeAt(0);
-    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+    if (charCode >= 0xaa && charCode <= 0xDBFF) {
       // Note: this doesn’t account for lone high surrogates;
       // you’d need even more code for that!
       output.push(character + string.charAt(++index));
-    } else {
+    } else { 
       output.push(character);
     }
   }

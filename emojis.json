@@ -48,10 +48,6 @@
     "name": "airplane"
   },
   {
-    "char": "⏰",
-    "name": "alarm_clock"
-  },
-  {
     "char": "👽",
     "name": "alien"
   },
@@ -98,14 +94,6 @@
   {
     "char": "◀️",
     "name": "arrow_backward"
-  },
-  {
-    "char": "⏬",
-    "name": "arrow_double_down"
-  },
-  {
-    "char": "⏫",
-    "name": "arrow_double_up"
   },
   {
     "char": "⬇️",
@@ -318,10 +306,6 @@
   {
     "char": "🎂",
     "name": "birthday"
-  },
-  {
-    "char": "⚫",
-    "name": "black_circle"
   },
   {
     "char": "🃏",
@@ -728,10 +712,6 @@
     "name": "clubs"
   },
   {
-    "char": "🇨🇳",
-    "name": "cn"
-  },
-  {
     "char": "🍸",
     "name": "cocktail"
   },
@@ -742,10 +722,6 @@
   {
     "char": "😰",
     "name": "cold_sweat"
-  },
-  {
-    "char": "💥",
-    "name": "collision"
   },
   {
     "char": "💻",
@@ -852,10 +828,6 @@
     "name": "cupid"
   },
   {
-    "char": "➰",
-    "name": "curly_loop"
-  },
-  {
     "char": "💱",
     "name": "currency_exchange"
   },
@@ -898,10 +870,6 @@
   {
     "char": "📅",
     "name": "date"
-  },
-  {
-    "char": "🇩🇪",
-    "name": "de"
   },
   {
     "char": "🌳",
@@ -968,10 +936,6 @@
     "name": "door"
   },
   {
-    "char": "🍩",
-    "name": "doughnut"
-  },
-  {
     "char": "🐉",
     "name": "dragon"
   },
@@ -1028,10 +992,6 @@
     "name": "eggplant"
   },
   {
-    "char": "8️⃣",
-    "name": "eight"
-  },
-  {
     "char": "✴️",
     "name": "eight_pointed_black_star"
   },
@@ -1058,10 +1018,6 @@
   {
     "char": "✉️",
     "name": "envelope"
-  },
-  {
-    "char": "🇪🇸",
-    "name": "es"
   },
   {
     "char": "💶",
