@@ -8,7 +8,7 @@ for (var i=0; i < 256; i++) {
 }
 
 console.log(data.toString('hex'))
-console.log(emoji.toNames(data))
+console.log(emoji.toUnicode(data))
 
 var encoded = emoji.toUnicode(data)
 var decoded = emoji.fromUnicode(encoded)
