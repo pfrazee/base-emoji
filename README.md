@@ -25,7 +25,7 @@ baseEmoji.toNames(buf)
 baseEmoji.toCustom(buf, function(v, emoji) {
   return '<img src="/img/emoji/'+emoji.name+'.png" alt="'+emoji.char+'" title="'+emoji.name+'">'
 })
-// => '<img src="/img/emoji/snowflake.png" alt="❄️" title="snowflake">...'
+// => '<img src="/img/emoji/snowflake.png" alt="❄" title="snowflake">...'
 baseEmoji.fromUnicode(baseEmoji.toUnicode(buf))
 // => <Buffer de ad be ef>
 ```
