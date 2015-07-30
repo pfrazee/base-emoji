@@ -2,9 +2,13 @@ var emoji = require('./index')
 var emojis = require('./emojis.json')
 var data = new Buffer(256)
 
+
 for (var i=0; i < 256; i++) {
   data.writeUIntBE(i, i, 1)
 }
+
+console.log(data.toString('hex'))
+console.log(emoji.toNames(data))
 
 var encoded = emoji.toUnicode(data)
 var decoded = emoji.fromUnicode(encoded)
